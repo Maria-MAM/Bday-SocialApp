@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+}
+body header, #menu, #login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+body header {
+    background-image: linear-gradient(#ff0000,  #ffcccc);
+    height: 70px;
+    color: #FFFFFF;
+    box-shadow:0px 10px 10px #ffe6e6;
+}
+body header img {
+    width: 2em;
+    height: 2em;
+    align-items: center;
+}
+body span {
+    font-size: 1.5em;
+}
+body header #menu {
+    width: 30em;
+}
+body header #login {
+    width: 10em;
+}
+body header #menu> * , #login > * {
+    cursor: pointer;
+}
+body form {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body form input {
+    margin: 0.3em;
+}
+body form #button {
+    background-color:  #ffe6e6;
+    color: #c12525;
+    margin: 0.6em;
+    padding: 0.6em;
+    border-radius: 1em;
+    border-style: none;
+    outline: none;
+}
+body form #button:hover {
+    background-color:  #ffcccc;
+}
+body #item-list {
+    display:flex;
+    flex-wrap: wrap;
+}
+body .item {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    width: 15em;
+    height: 20em;
+    list-style: none;
+    border: 1px solid red;
+    margin: 0.3em;
+    border-radius: 0.5em;
+}
+body .item .delete {
+    padding: 0.2em;
+    margin-right: 0.5em;
+    visibility: hidden;
+}
+body .item:hover .delete {
+    visibility: visible;
+    padding: 0.2em;
+    margin-right: 0.5em;
+    border-radius: 2em;
+}
+body .item div {
+    height: 15em;
+    display: flex;
+    align-items: center;
+}
+body img {
+    width: 10em;
+    height: auto;   
+}
+body .item li {
+    height: 4em;
+}
+body h2 {
+    margin: 1em;
+}
+body #user-list {
+    display:flex;
+    flex-wrap: wrap;
+}
+body .user {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    width: 15em;
+    height: 10em;
+    list-style: none;
+    border: 1px solid red;
+    margin: 0.3em;
+    border-radius: 0.5em;
+}
+body #cover-image {
+  min-height: 100%;
+  min-width: 102px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 6em; 
+}
